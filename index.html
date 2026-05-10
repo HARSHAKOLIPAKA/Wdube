@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar / Chat List -->
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <div class="profile">
+                    <img src="https://via.placeholder.com/40" alt="Profile" class="profile-img">
+                    <span class="user-name">John Doe</span>
+                </div>
+                <div class="header-actions">
+                    <i class="fas fa-search search-icon"></i>
+                    <i class="fas fa-ellipsis-v menu-icon"></i>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search or start new chat">
+            </div>
+            
+            <div class="chat-list">
+                <div class="chat-item active" data-chat="1">
+                    <div class="chat-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Sarah">
+                        <div class="online-status"></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <h3>Sarah Wilson</h3>
+                            <span class="time">2:30 PM</span>
+                        </div>
+                        <p class="last-message">Hey! How are you doing?</p>
+                        <div class="message-status">
+                            <span class="unread">2</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-item" data-chat="2">
+                    <div class="chat-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Mike">
+                        <div class="online-status"></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <h3>Mike Johnson</h3>
+                            <span class="time">Yesterday</span>
+                        </div>
+                        <p class="last-message">Thanks for the help!</p>
+                    </div>
+                </div>
+                
+                <div class="chat-item" data-chat="3">
+                    <div class="chat-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Group">
+                        <div class="online-status group"></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <h3>Work Team</h3>
+                            <span class="time">10:15 AM</span>
+                        </div>
+                        <p class="last-message">Mike: Meeting at 3 PM</p>
+                        <div class="message-status">
+                            <span class="unread">5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Window -->
+        <div class="chat-window">
+            <div class="chat-header">
+                <div class="chat-header-left">
+                    <div class="back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="chat-avatar">
+                        <img src="https://via.placeholder.com/40" alt="Sarah">
+                        <div class="online-status"></div>
+                    </div>
+                    <div class="chat-info">
+                        <h3>Sarah Wilson</h3>
+                        <span class="status">online</span>
+                    </div>
+                </div>
+                <div class="chat-header-right">
+                    <i class="fas fa-video"></i>
+                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                <!-- Messages will be loaded here -->
+            </div>
+
+            <div class="message-input-container">
+                <div class="message-input-left">
+                    <i class="fas fa-face-smile"></i>
+                    <i class="fas fa-image"></i>
+                    <i class="fas fa-paperclip"></i>
+                </div>
+                <div class="message-input-center">
+                    <input type="text" id="messageInput" placeholder="Type a message">
+                </div>
+                <div class="message-input-right">
+                    <i class="fas fa-microphone record-btn"></i>
+                    <button id="sendBtn" class="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
